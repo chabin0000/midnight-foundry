@@ -23,7 +23,7 @@ test('CSV and JSON round trip Unicode records', () => {
   assert.deepEqual(csvToJSON(jsonToCSV(rows)), rows);
 });
 test('text stats count Unicode characters and UTF-8 bytes', () => {
-  assert.deepEqual(textStats('한글 🌱\nnext'), {characters:8,withoutSpaces:7,words:3,lines:2,bytes:15,readingMinutes:1});
+  assert.deepEqual(textStats('한글 🌱\nnext'), {characters:9,withoutSpaces:7,words:3,lines:2,bytes:16,readingMinutes:1});
 });
 test('Base64 round trips Korean and emoji', () => {
   const encoded = base64Encode('안녕 🌌');
@@ -36,7 +36,7 @@ test('color helpers validate hex and calculate WCAG contrast', () => {
   assert.throws(() => parseHex('#12'));
 });
 test('line diff identifies additions and removals', () => {
-  assert.deepEqual(diffLines('a\nb\nc','a\nx\nc'), [{type:'same',text:'a'},{type:'add',text:'x'},{type:'remove',text:'b'},{type:'same',text:'c'}]);
+  assert.deepEqual(diffLines('a\nb\nc','a\nx\nc'), [{type:'same',text:'a'},{type:'remove',text:'b'},{type:'add',text:'x'},{type:'same',text:'c'}]);
 });
 test('query parser supports full URLs and repeated values', () => {
   assert.deepEqual(parseQuery('https://example.test/?x=1&x=2#top'), [['x','1'],['x','2']]);
@@ -62,3 +62,4 @@ test('markdown output escapes raw HTML', () => {
   assert.match(renderMarkdown('<img src=x>'), /&lt;img/);
   assert.match(renderMarkdown('**safe**'), /<strong>safe<\/strong>/);
 });
+
