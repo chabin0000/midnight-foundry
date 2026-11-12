@@ -196,5 +196,11 @@
     "name": "File Lens",
     "category": "Developer",
     "description": "Inspect file metadata, SHA-256 and a local text preview."
+  },
+  {
+    "id": "chart-sketch",
+    "name": "Chart Sketch",
+    "category": "Data",
+    "description": "Draw and export a bar chart from label-value pairs."
   }
 ]
