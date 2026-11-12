@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {words,slug,csv,contrast,life,resistor,encode64,decode64,diff,seeded} from '../core.js';
+test('Unicode counts and byte lengths',()=>{assert.deepEqual(words('안녕 👋'),{characters:4,words:2,lines:1,bytes:11});assert.equal(words('').lines,0);});
+test('slugs preserve Korean and normalize accents',()=>{assert.equal(slug('  Héllo, World! '),'hello-world');assert.equal(slug('안녕 세상'),'안녕-세상');});
+test('CSV handles embedded separators, quotes and newlines',()=>{assert.deepEqual(csv('a,b\r\n"x,y","z""q"\r\n'),[['a','b'],['x,y','z"q']]);assert.deepEqual(csv('"a\nb",c'),[['a\nb','c']]);assert.throws(()=>csv('"broken'));});
+test('contrast bounds and symmetry',()=>{assert.equal(contrast('#000000','#ffffff'),21);assert.equal(contrast('#abcdef','#abcdef'),1);assert.equal(contrast('#123456','#abcdef'),contrast('#abcdef','#123456'));assert.throws(()=>contrast('bad','#ffffff'));});
+test('life blinker oscillates and stable block stays',()=>{const a=Array(25).fill(0);a[11]=a[12]=a[13]=1;const b=life(a,5,5);assert.equal(b[7]+b[12]+b[17],3);assert.deepEqual(life(b,5,5),a);const c=Array(25).fill(0);c[6]=c[7]=c[11]=c[12]=1;assert.deepEqual(life(c,5,5),c);});
+test('Ohm law rejects invalid resistance',()=>{assert.deepEqual(resistor(5,1000),{current:.005,power:.025});assert.throws(()=>resistor(5,0));assert.throws(()=>resistor(Infinity,1));});
+test('Base64 supports multilingual round trips',()=>{for(const s of ['','hello','안녕하세요 👋','a\n文'])assert.equal(decode64(encode64(s)),s);assert.throws(()=>decode64('%%%'));});
+test('line diff exposes edits and bounds complexity',()=>{assert.equal(diff('a\nb','a\nc'),'  a\n+ c\n- b');assert.throws(()=>diff('a\n'.repeat(1100),'b\n'.repeat(1100)));});
+test('seeded random repeats without constant outputs',()=>{const a=seeded(42),b=seeded(42);const x=Array.from({length:100},a);assert.deepEqual(x,Array.from({length:100},b));assert(x.every(n=>n>=0&&n<1));assert(new Set(x).size>95);});
