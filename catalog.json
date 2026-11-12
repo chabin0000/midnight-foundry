@@ -184,5 +184,11 @@
     "name": "Drum Machine",
     "category": "Music",
     "description": "Compose an eight-step beat with synthesized drums."
+  },
+  {
+    "id": "time-zone-board",
+    "name": "Time Zone Board",
+    "category": "Productivity",
+    "description": "Compare live clocks in multiple time zones."
   }
 ]
