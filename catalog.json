@@ -190,5 +190,11 @@
     "name": "Time Zone Board",
     "category": "Productivity",
     "description": "Compare live clocks in multiple time zones."
+  },
+  {
+    "id": "file-lens",
+    "name": "File Lens",
+    "category": "Developer",
+    "description": "Inspect file metadata, SHA-256 and a local text preview."
   }
 ]
