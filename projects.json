@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "pocket-workbench",
+    "name": "Pocket Workbench",
+    "tagline": "Tools for the small things.",
+    "accent": "#8ce9cf",
+    "description": "Developer utilities that stay in your browser."
+  },
+  {
+    "slug": "circuit-garden",
+    "name": "Circuit Garden",
+    "tagline": "Grow your intuition.",
+    "accent": "#ffc681",
+    "description": "Eight interactive electronic circuit experiments."
+  },
+  {
+    "slug": "algorithm-arcade",
+    "name": "Algorithm Arcade",
+    "tagline": "Ideas in motion.",
+    "accent": "#b9a4ff",
+    "description": "Six playable windows into algorithms and emergent systems."
+  },
+  {
+    "slug": "focus-orbit",
+    "name": "Focus Orbit",
+    "tagline": "Make room for deep work.",
+    "accent": "#9bbfff",
+    "description": "A calm, local-first focus timer, task board, and scratchpad."
+  },
+  {
+    "slug": "repo-lantern",
+    "name": "Repo Lantern",
+    "tagline": "See what is in your repository.",
+    "accent": "#fa9bb1",
+    "description": "A read-only, zero-dependency repository inventory CLI."
+  }
+]

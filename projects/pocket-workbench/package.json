@@ -1,0 +1,14 @@
+{
+  "name": "pocket-workbench",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Developer utilities that stay in your browser.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "algorithm-arcade",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Six playable windows into algorithms and emergent systems.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node --test"
+  }
+}

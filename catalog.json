@@ -1,0 +1,122 @@
+[
+  {
+    "id": "json-studio",
+    "name": "JSON Studio",
+    "category": "Developer",
+    "description": "Format and validate JSON."
+  },
+  {
+    "id": "text-lab",
+    "name": "Text Lab",
+    "category": "Writing",
+    "description": "Live Unicode character, word, line and byte counts."
+  },
+  {
+    "id": "slug-workshop",
+    "name": "Slug Workshop",
+    "category": "Developer",
+    "description": "Create readable Unicode URL slugs, one per line."
+  },
+  {
+    "id": "base64-desk",
+    "name": "Base64 Desk",
+    "category": "Developer",
+    "description": "Encode and decode UTF-8 text including Korean and emoji."
+  },
+  {
+    "id": "url-desk",
+    "name": "URL Desk",
+    "category": "Developer",
+    "description": "Inspect URL query parameters and encode URI components."
+  },
+  {
+    "id": "csv-lens",
+    "name": "CSV Lens",
+    "category": "Data",
+    "description": "Parse quoted CSV into JSON using the first row as keys."
+  },
+  {
+    "id": "line-diff",
+    "name": "Line Diff",
+    "category": "Developer",
+    "description": "Compare texts using a longest common subsequence line diff."
+  },
+  {
+    "id": "contrast-meter",
+    "name": "Contrast Meter",
+    "category": "Design",
+    "description": "Check relative luminance contrast of text and background."
+  },
+  {
+    "id": "gradient-forge",
+    "name": "Gradient Forge",
+    "category": "Design",
+    "description": "Create a CSS gradient with a live preview."
+  },
+  {
+    "id": "palette-dice",
+    "name": "Palette Dice",
+    "category": "Design",
+    "description": "Generate repeatable palettes from a numeric seed."
+  },
+  {
+    "id": "focus-clock",
+    "name": "Focus Clock",
+    "category": "Productivity",
+    "description": "A deadline-based focus timer that survives sleeping tabs."
+  },
+  {
+    "id": "decision-dice",
+    "name": "Decision Dice",
+    "category": "Productivity",
+    "description": "Choose a nonempty line with cryptographic randomness."
+  },
+  {
+    "id": "ohm-lab",
+    "name": "Ohm Lab",
+    "category": "Electronics",
+    "description": "Explore ideal resistor current and power."
+  },
+  {
+    "id": "pwm-sketch",
+    "name": "PWM Sketch",
+    "category": "Electronics",
+    "description": "Draw an ideal PWM signal and calculate average voltage."
+  },
+  {
+    "id": "life-garden",
+    "name": "Life Garden",
+    "category": "Simulation",
+    "description": "Paint cells in Conway\u2019s Game of Life on a wrapping grid."
+  },
+  {
+    "id": "orbit-ink",
+    "name": "Orbit Ink",
+    "category": "Art",
+    "description": "Seeded generative orbital art with PNG export."
+  },
+  {
+    "id": "reaction-sprint",
+    "name": "Reaction Sprint",
+    "category": "Game",
+    "description": "Measure reaction time after an unpredictable cue."
+  },
+  {
+    "id": "typing-track",
+    "name": "Typing Track",
+    "category": "Game",
+    "description": "Practice typing with elapsed-time speed and positional accuracy."
+  },
+  {
+    "id": "unix-clock",
+    "name": "Unix Clock",
+    "category": "Developer",
+    "description": "Convert Unix seconds to an ISO date and back."
+  },
+  {
+    "id": "hash-desk",
+    "name": "Hash Desk",
+    "category": "Developer",
+    "description": "Calculate a SHA-256 digest of UTF-8 text locally."
+  }
+]

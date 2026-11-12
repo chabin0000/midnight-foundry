@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17172a">
+  <meta name="description" content="A quiet, dependency-free focus timer that runs entirely in your browser.">
+  <title>Stillpoint — Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">A SMALL SPACE FOR ONE THING</p>
+    <h1>Stillpoint</h1>
+    <p class="subtitle">Give your attention somewhere to land.</p>
+    <div class="modes" role="group" aria-label="Timer length">
+      <button class="mode active" data-minutes="25">Focus <span>25 min</span></button>
+      <button class="mode" data-minutes="5">Short rest <span>5 min</span></button>
+      <button class="mode" data-minutes="15">Long rest <span>15 min</span></button>
+    </div>
+    <section class="dial" aria-label="Timer">
+      <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="track" cx="120" cy="120" r="108"></circle><circle id="ring" class="ring" cx="120" cy="120" r="108"></circle></svg>
+      <div class="readout"><time id="time" datetime="PT25M">25:00</time><span id="status">READY</span></div>
+    </section>
+    <div class="actions"><button id="toggle" class="primary">Begin session</button><button id="reset" class="secondary">Reset</button></div>
+    <p id="message" class="message" aria-live="polite">No streaks. No pressure. Just this moment.</p>
+    <p class="shortcut">Space to start or pause · R to reset</p>
+  </main>
+  <script src="timer.js" defer></script>
+</body>
+</html>
