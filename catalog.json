@@ -87,7 +87,7 @@
     "id": "life-garden",
     "name": "Life Garden",
     "category": "Simulation",
-    "description": "Paint cells in Conway\u2019s Game of Life on a wrapping grid."
+    "description": "Paint cells in Conway’s Game of Life on a wrapping grid."
   },
   {
     "id": "orbit-ink",
@@ -118,5 +118,71 @@
     "name": "Hash Desk",
     "category": "Developer",
     "description": "Calculate a SHA-256 digest of UTF-8 text locally."
+  },
+  {
+    "id": "memory-grid",
+    "name": "Memory Grid",
+    "category": "Game",
+    "description": "Match eight pairs in sixteen shuffled cards."
+  },
+  {
+    "id": "sort-stage",
+    "name": "Sort Stage",
+    "category": "Algorithms",
+    "description": "Watch insertion sort arrange a shuffled set of bars."
+  },
+  {
+    "id": "fractal-window",
+    "name": "Fractal Window",
+    "category": "Art",
+    "description": "Explore a Mandelbrot set; click to zoom and reset to return."
+  },
+  {
+    "id": "particle-atlas",
+    "name": "Particle Atlas",
+    "category": "Simulation",
+    "description": "Move the pointer to attract particles; pause to inspect."
+  },
+  {
+    "id": "beat-box",
+    "name": "Beat Box",
+    "category": "Music",
+    "description": "A four-voice, sixteen-step drum sequencer using synthesized sounds."
+  },
+  {
+    "id": "metronome",
+    "name": "Metronome",
+    "category": "Music",
+    "description": "Simple audible beats and a visual pulse."
+  },
+  {
+    "id": "local-notes",
+    "name": "Local Notes",
+    "category": "Productivity",
+    "description": "A plain text scratchpad saved in this browser, with file export."
+  },
+  {
+    "id": "unit-station",
+    "name": "Unit Station",
+    "category": "Utility",
+    "description": "Convert distance, mass and temperature units."
+  },
+  {
+    "id": "aspect-desk",
+    "name": "Aspect Desk",
+    "category": "Design",
+    "description": "Find a matching image dimension for a selected aspect ratio."
+  },
+  {
+    "id": "binary-desk",
+    "name": "Binary Desk",
+    "category": "Developer",
+    "description": "Convert arbitrary-size integers between decimal, hexadecimal and binary."
+  },
+  {
+    "id": "drum-machine",
+    "name": "Drum Machine",
+    "category": "Music",
+    "description": "Compose an eight-step beat with synthesized drums."
   }
 ]
